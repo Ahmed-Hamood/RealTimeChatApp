@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>RealTimeChatApp</title>
+ </head>
+ <body>
+  <div class="chat-container">
+   <header class="chat-header">
+    <div class="header-title">
+     <h1>RealTimeChat &nbsp;</h1>
+     <h3 class="username-title">Welcome, <span id="username-text">.....</span> </h3>
+    </div>
+    <a id="" href="/" class="btn leave-btn">Leave</a>
+   </header>
+
+   <main class="chat-main">
+
+
+    <div class="chat-sidebar">
+     <h3># Room Name</h3>
+     <h2 id="room-name">Loading.....</h2>
+     <h3># All Online Users</h3>
+     <ul id="users-list">
+      <!-- <li>cxdf</li> -->
+
+     </ul>
+    </div>
+
+    <div class="chat-msg-container">
+
+      
+     <div class="chat-messages">
+
+      <!-- Messages content here ....... -->
+      <div class="message">
+       <p class="username">Adam Sam <span>01:12</span> </p>
+       <p class="message-text">Welcome There !!!!!!</p> 
+      </div>
+      <!-- -------------------------------------- -->
+      <!-- Messages content here ....... -->
+      <div class="message other-message">
+       <p class="username">Alvin Hansen <span>01:12</span> </p>
+       <p class="message-text">Hello EveryOne</p> 
+      </div>
+      
+
+     </div>
+
+     <div class="msg-content">
+      <form id="chat-form">
+       <input id="msg-input" type="text" placeholder="Enter Message" required autocomplete="off" />
+       <button class="btn send-btn"><i class="fas fa-paper-plane"></i></button>
+      </form>
+     </div>
+    </div>
+   </main>
+  </div>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script> -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+ </body>
+</html>
