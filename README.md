@@ -1,6 +1,6 @@
 # Our Application
 
-We are going create a realtime chat application using webSocket socket.io that communicate the client and server together thru bi-direction communication
+We are going to create a realtime chat application using webSocket socket.io that communicate client and server together thru bi-direction communication
 
 ## A- Initialize npm
 
